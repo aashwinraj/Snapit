@@ -1,0 +1,2 @@
+com/example/snapit/BuildConfig.java
+ com.example.snapit.BuildConfig

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+
+    <ListView
+        android:id="@+id/list_view_snaps"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+    android:layout_below="@id/intro"
+
+        android:layout_marginTop="20dp"
+        >
+
+
+        <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--        android:id="@+id/floatingActionButton2"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:clickable="true"-->
+        <!--        app:srcCompat="@android:drawable/ic_menu_edit" />-->
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Snaps sent to you will appear here"
+        android:textSize="18dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_send_snap"
+        android:layout_width="119dp"
+        android:layout_height="86dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/send"
+
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="37dp"
+        android:backgroundTint="#EF4589"
+        android:text="make\nsnap"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

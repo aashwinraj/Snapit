@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    android:background="@drawable/iphone_x__xs__11_pro__2"-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/register_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Register"-->
+    <!--        android:fontFamily="sans-serif-medium"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginRight="34dp"-->
+    <!--        android:layout_below="@id/cardView_login"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:textSize="28sp"/>-->
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+
+
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+
+
+        android:hint="e-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:hint="Password"
+
+        android:inputType="textPassword" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_text_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/custom_button"
+            android:text="login" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_register"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cardView_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/custom_button"
+            android:text="Register" />
+    </androidx.cardview.widget.CardView>
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_new_account"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Create New Account"-->
+    <!--        android:layout_below="@id/button_login"-->
+    <!--        android:layout_marginTop="80dp"-->
+    <!--        android:layout_centerHorizontal="true"/>-->
+
+
+</RelativeLayout>
