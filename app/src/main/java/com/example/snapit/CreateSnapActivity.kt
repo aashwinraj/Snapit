@@ -94,7 +94,7 @@ showProressDialogue()
                     intent.putExtra("message", editText?.text.toString())
                     startActivity(intent)
                     hideProgressDialogue()
-                    finish()
+finish()
                 }
             }
 
