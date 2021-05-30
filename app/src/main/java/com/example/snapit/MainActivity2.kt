@@ -9,7 +9,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
-class MainActivity2 : AppCompatActivity() {
+class MainActivity2 : SnackbarActivity() {
     var nameText: EditText? = null
     var email_Text: EditText? = null
     var password_Text: EditText? = null
@@ -28,13 +28,14 @@ class MainActivity2 : AppCompatActivity() {
 
 
         registerButton.setOnClickListener {
-
-
+            showProressDialogue()
             mAuth.createUserWithEmailAndPassword(
                 email_Text?.text.toString(), password_Text?.text.toString()
             ).addOnCompleteListener(this)
             { task ->
                 if (task.isSuccessful) {
+                    showProressDialogue()
+
                     task.result?.user?.let { it1 ->
                         FirebaseDatabase.getInstance().reference.child("users").child(it1.uid)
                             .child("email")
@@ -42,9 +43,10 @@ class MainActivity2 : AppCompatActivity() {
                     }
 
                     login()
+                    hideProgressDialogue()
                 } else {
                     // If sign in fails, display a message to the user.
-
+hideProgressDialogue()
                     Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
 
                 }

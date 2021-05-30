@@ -11,7 +11,7 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : SnackbarActivity() {
 
     var emailText: EditText? = null
     var passwordText: EditText? = null
@@ -47,11 +47,14 @@ class MainActivity : AppCompatActivity() {
             login()
 
         button1.setOnClickListener {
+             showProressDialogue()
             mAuth.signInWithEmailAndPassword(emailText?.text.toString(), passwordText?.text.toString()).addOnCompleteListener(this)
             { task ->
                     if (task.isSuccessful) {
                         login()
+                        hideProgressDialogue()
                     } else {
+                        hideProgressDialogue()
                         Toast.makeText(
                             baseContext, "Authentication failed.",
                             Toast.LENGTH_SHORT

@@ -8,12 +8,12 @@
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\layout\\item_user_entry.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_snap.xml.flat",
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\layout\\activity_snap.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
