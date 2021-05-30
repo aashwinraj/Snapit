@@ -4,6 +4,10 @@
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\drawable-xxxhdpi\\iphone_x__xs__11_pro__3.png"
     },
     {
+        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_user_entry.xml.flat",
+        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\layout\\item_user_entry.xml"
+    },
+    {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
@@ -14,6 +18,10 @@
     {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_uderdp.xml.flat",
+        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\drawable\\uderdp.xml"
     },
     {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
@@ -32,12 +40,12 @@
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_create_snap.xml.flat",
@@ -50,6 +58,10 @@
     {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialouge_progress.xml.flat",
+        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\layout\\dialouge_progress.xml"
     },
     {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_choose_user.xml.flat",
@@ -68,12 +80,12 @@
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\drawable-xxxhdpi\\iphone_x__xs__11_pro__2.png"
     },
     {
-        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_iphone_x__xs__11_pro__4.png.flat",
-        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\drawable-xxxhdpi\\iphone_x__xs__11_pro__4.png"
-    },
-    {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_image_24.xml.flat",
         "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\drawable\\ic_baseline_image_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_iphone_x__xs__11_pro__4.png.flat",
+        "source": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\src\\main\\res\\drawable-xxxhdpi\\iphone_x__xs__11_pro__4.png"
     },
     {
         "merged": "C:\\Users\\HP\\AndroidStudioProjects\\Snapit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

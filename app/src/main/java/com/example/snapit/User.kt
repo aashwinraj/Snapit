@@ -1,12 +1,9 @@
 package com.example.snapit
 
-class User
+data class User(var email : String )
 {
-    var emailId:String?=null
-    var image:Int?= null
+    override fun toString(): String {
 
-    constructor(emailId: String?, image: Int?) {
-        this.emailId = emailId
-        this.image = image
+        return email
     }
 }

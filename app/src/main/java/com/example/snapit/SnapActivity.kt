@@ -24,7 +24,8 @@ class SnapActivity : AppCompatActivity() {
         setContentView(R.layout.activity_snap)
         var emails: ArrayList<String> = ArrayList()
         list_view_snaps = findViewById(R.id.list_view_snaps)
-        val adapter = ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, emails)
+        val adapter = ArrayAdapter(this,
+            android.R.layout.simple_expandable_list_item_1, emails)
         list_view_snaps?.adapter = adapter
         FirebaseDatabase.getInstance().reference.child("users").child(mAuth.currentUser?.uid!!).child("snaps")
                 .addChildEventListener(object : ChildEventListener {

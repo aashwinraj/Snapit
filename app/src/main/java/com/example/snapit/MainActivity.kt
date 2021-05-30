@@ -15,13 +15,14 @@ class MainActivity : AppCompatActivity() {
 
     var emailText: EditText? = null
     var passwordText: EditText? = null
+
     override fun getSupportActionBar(): ActionBar? {
         if (supportActionBar != null)
             supportActionBar?.hide()
         return super.getSupportActionBar()
     }
 
-        private val mAuth = FirebaseAuth.getInstance()
+    private val mAuth = FirebaseAuth.getInstance()
 
     private fun login() {
 
@@ -32,20 +33,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-
-
-
-
-
         emailText = findViewById(R.id.edit_text_email)
         passwordText = findViewById(R.id.edit_text_password)
-        val register:Button=findViewById(R.id.button2)
+        val register: Button = findViewById(R.id.button2)
         val button1: Button = findViewById(R.id.button_login)
 
         register.setOnClickListener {
-            val intent= Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
 
@@ -53,24 +47,19 @@ class MainActivity : AppCompatActivity() {
             login()
 
         button1.setOnClickListener {
-            mAuth.signInWithEmailAndPassword(
-                emailText?.text.toString(),
-                passwordText?.text.toString()
-            )
-                    .addOnCompleteListener(this) { task -> if (task.isSuccessful)
-                    {
-                            login()
-                        }
-                    else
-                    {
-                            Toast.makeText(
-                                baseContext, "Authentication failed.",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
-
-                        // ...
+            mAuth.signInWithEmailAndPassword(emailText?.text.toString(), passwordText?.text.toString()).addOnCompleteListener(this)
+            { task ->
+                    if (task.isSuccessful) {
+                        login()
+                    } else {
+                        Toast.makeText(
+                            baseContext, "Authentication failed.",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
+
+                    // ...
+                }
         }
 
 

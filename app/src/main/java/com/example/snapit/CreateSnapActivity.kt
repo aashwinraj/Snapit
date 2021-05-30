@@ -14,19 +14,17 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.storage.FirebaseStorage
 import java.io.ByteArrayOutputStream
-import java.net.URI
 import java.util.*
 
 
 class CreateSnapActivity : AppCompatActivity() {
 
-    private  val PICK_IMAGE = 100
+    private val PICK_IMAGE = 100
     var imageUri: Uri? = null
-    private val imageName= UUID.randomUUID().toString()+".jpg"
+    private val imageName = UUID.randomUUID().toString() + ".jpg"
 
-    private var imageView: ImageView?=null
-    private var editText: EditText?=null
-
+    private var imageView: ImageView? = null
+    private var editText: EditText? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,8 +35,8 @@ class CreateSnapActivity : AppCompatActivity() {
         actionBar?.hide()
 
         imageView = findViewById(R.id.imageSnap)
-        val button: Button =  findViewById(R.id.buttonAdd)
-        editText=findViewById(R.id.editTextAddText)
+        val button: Button = findViewById(R.id.buttonAdd)
+        editText = findViewById(R.id.editTextAddText)
 
         button.setOnClickListener {
 
@@ -54,7 +52,7 @@ class CreateSnapActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == RESULT_OK && requestCode == PICK_IMAGE){
+        if (resultCode == RESULT_OK && requestCode == PICK_IMAGE) {
             if (data != null) {
                 imageUri = data.data
             };
@@ -62,7 +60,7 @@ class CreateSnapActivity : AppCompatActivity() {
         }
 
 
-        val nextButton: Button =findViewById(R.id.nextButton)
+        val nextButton: Button = findViewById(R.id.nextButton)
         nextButton.setOnClickListener {
 
             // Get the data from an ImageView as bytes
@@ -73,8 +71,9 @@ class CreateSnapActivity : AppCompatActivity() {
             bitmap?.compress(Bitmap.CompressFormat.JPEG, 100, baos)
             val data = baos.toByteArray()
             FirebaseStorage.getInstance().reference.child("images").child(imageName)
-            var uploadTask = FirebaseStorage.getInstance().reference.child("images").child(imageName)
-                .putBytes(data)
+            var uploadTask =
+                FirebaseStorage.getInstance().reference.child("images").child(imageName)
+                    .putBytes(data)
             uploadTask.addOnFailureListener {
                 // Handle unsuccessful uploads
                 Toast.makeText(this, "upload Failed", Toast.LENGTH_LONG).show()

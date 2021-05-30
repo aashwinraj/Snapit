@@ -1624,10 +1624,12 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable selection_band_overlay
 drawable send
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable uderdp
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1724,6 +1726,7 @@ id button_login
 id button_send_snap
 id cache_measures
 id cancel_button
+id cardView_dp
 id cardView_image
 id cardView_login
 id cardView_next
@@ -1786,6 +1789,7 @@ id easeInOut
 id easeOut
 id editTextAddText
 id edit_query
+id edit_text_cnfpassword
 id edit_text_email
 id edit_text_name
 id edit_text_password
@@ -1844,7 +1848,6 @@ id linear
 id listMode
 id list_item
 id list_view_snaps
-id list_view_users
 id logout
 id masked
 id message
@@ -1910,6 +1913,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView_user
 id registration
 id reverseSawtooth
 id right
@@ -1991,6 +1995,7 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView_userEmail
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2020,6 +2025,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_dp
 id view_offset_helper
 id visible
 id wide
@@ -2112,6 +2118,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialouge_progress
+layout item_user_entry
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
