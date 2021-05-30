@@ -1633,6 +1633,7 @@ drawable uderdp
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id BoxeditTextAddText
 id CTRL
 id FUNCTION
 id META

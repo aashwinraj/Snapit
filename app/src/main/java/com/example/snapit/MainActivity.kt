@@ -28,6 +28,7 @@ class MainActivity : SnackbarActivity() {
 
         val intent = Intent(this, SnapActivity::class.java)
         startActivity(intent)
+        finish()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

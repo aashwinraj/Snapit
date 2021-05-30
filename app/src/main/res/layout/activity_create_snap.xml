@@ -4,18 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/BoxeditTextAddText"
+android:layout_marginRight="12dp"
+
+        android:layout_below="@id/cardView_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+
+         >
+
+        <EditText
+            android:id="@+id/editTextAddText"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:hint="write a message"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 
     <ImageView
 
         android:id="@+id/imageSnap"
-        android:layout_width="310dp"
-        android:layout_height="310dp"
-
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+    android:scaleType="centerCrop"
         android:layout_centerHorizontal="true"
 
 
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="40dp"
 
 
         android:src="@drawable/ic_baseline_image_24" />
@@ -26,7 +48,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/imageSnap"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="10dp"
         app:cardCornerRadius="30dp">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -41,11 +63,12 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView_next"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/editTextAddText"
+
+        android:layout_below="@+id/BoxeditTextAddText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="60dp"
         app:cardCornerRadius="30dp">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -61,16 +84,7 @@
 
 
 
-    <EditText
-        android:id="@+id/editTextAddText"
-        android:layout_width="317dp"
-        android:layout_height="80dp"
 
-        android:layout_below="@id/cardView_image"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="12dp"
-        android:hint="write a message"
-        android:textSize="18sp" />
 
 
 

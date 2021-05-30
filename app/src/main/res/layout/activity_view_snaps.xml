@@ -6,15 +6,16 @@
     <ImageView
         android:id="@+id/snap_image"
         android:layout_width="match_parent"
+        android:scaleType="centerCrop"
         android:layout_height="450dp"
         android:src="@color/design_default_color_primary_variant"
         android:layout_margin="24dp"/>
     <TextView
         android:id="@+id/snap_message"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/snap_image"
-        android:layout_alignLeft="@id/snap_image"
+
         android:textSize="18sp"
         android:layout_margin="24dp"/>
 
