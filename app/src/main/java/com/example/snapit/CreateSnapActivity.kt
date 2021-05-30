@@ -17,7 +17,7 @@ import java.io.ByteArrayOutputStream
 import java.util.*
 
 
-class CreateSnapActivity : AppCompatActivity() {
+class CreateSnapActivity : SnackbarActivity() {
 
     private val PICK_IMAGE = 100
     var imageUri: Uri? = null
@@ -62,7 +62,7 @@ class CreateSnapActivity : AppCompatActivity() {
 
         val nextButton: Button = findViewById(R.id.nextButton)
         nextButton.setOnClickListener {
-
+showProressDialogue()
             // Get the data from an ImageView as bytes
 //           imageView!!.isDrawingCacheEnabled = true
 //           imageView!!.buildDrawingCache()
@@ -76,6 +76,7 @@ class CreateSnapActivity : AppCompatActivity() {
                     .putBytes(data)
             uploadTask.addOnFailureListener {
                 // Handle unsuccessful uploads
+                hideProgressDialogue()
                 Toast.makeText(this, "upload Failed", Toast.LENGTH_LONG).show()
             }.addOnSuccessListener { taskSnapshot ->
                 // taskSnapshot.metadata contains file metadata such as size, content-type, etc.
@@ -92,6 +93,8 @@ class CreateSnapActivity : AppCompatActivity() {
                     intent.putExtra("imageName", imageName)
                     intent.putExtra("message", editText?.text.toString())
                     startActivity(intent)
+                    hideProgressDialogue()
+                    finish()
                 }
             }
 
