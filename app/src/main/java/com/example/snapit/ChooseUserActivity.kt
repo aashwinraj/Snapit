@@ -2,6 +2,7 @@ package com.example.snapit
 
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
@@ -21,8 +22,8 @@ class ChooseUserActivity : AppCompatActivity(), UserAdapter.OnItemClickListener 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_user)
-        val ab = supportActionBar
-        ab?.hide()
+        val actionBar: ActionBar? = supportActionBar
+        actionBar?.hide()
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_user)
         val adapter = UserAdapter(emailEntries, this)
         recyclerView.adapter = adapter

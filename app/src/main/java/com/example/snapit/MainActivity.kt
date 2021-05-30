@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -11,16 +12,12 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity : SnackbarActivity() {
+class MainActivity : AppCompatActivity() {
 
     var emailText: EditText? = null
     var passwordText: EditText? = null
 
-    override fun getSupportActionBar(): ActionBar? {
-        if (supportActionBar != null)
-            supportActionBar?.hide()
-        return super.getSupportActionBar()
-    }
+
 
     private val mAuth = FirebaseAuth.getInstance()
 
@@ -29,11 +26,16 @@ class MainActivity : SnackbarActivity() {
         val intent = Intent(this, SnapActivity::class.java)
         startActivity(intent)
         finish()
+
     }
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val actionBar: ActionBar? = supportActionBar
+        actionBar?.hide()
         emailText = findViewById(R.id.edit_text_email)
         passwordText = findViewById(R.id.edit_text_password)
         val register: Button = findViewById(R.id.button2)
@@ -48,14 +50,19 @@ class MainActivity : SnackbarActivity() {
             login()
 
         button1.setOnClickListener {
-             showProressDialogue()
-            mAuth.signInWithEmailAndPassword(emailText?.text.toString(), passwordText?.text.toString()).addOnCompleteListener(this)
-            { task ->
+
+
+
+                mAuth.signInWithEmailAndPassword(
+                    emailText?.text.toString(),
+                    passwordText?.text.toString()
+                ).addOnCompleteListener(this)
+                { task ->
                     if (task.isSuccessful) {
                         login()
-                        hideProgressDialogue()
+
                     } else {
-                        hideProgressDialogue()
+
                         Toast.makeText(
                             baseContext, "Authentication failed.",
                             Toast.LENGTH_SHORT
@@ -64,9 +71,9 @@ class MainActivity : SnackbarActivity() {
 
                     // ...
                 }
+
+
         }
-
-
     }
 
 
