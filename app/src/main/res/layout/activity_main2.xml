@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="200dp"
         android:hint="name" />
 
     <EditText
@@ -44,7 +44,19 @@ android:inputType="textEmailAddress"
         android:layout_below="@id/edit_text_email"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:hint="password" />
+        android:hint="password(minimum 7 characters long" />
+    <EditText
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/edit_text_cnfpassword"
+
+
+        android:layout_width="250dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:hint="Confirm Password" />
 
 
     <androidx.cardview.widget.CardView
@@ -52,7 +64,7 @@ android:inputType="textEmailAddress"
         android:layout_height="50dp"
         android:id="@+id/cardView_register"
         app:cardCornerRadius="30dp"
-        android:layout_below="@id/edit_text_password"
+        android:layout_below="@id/edit_text_cnfpassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
 
